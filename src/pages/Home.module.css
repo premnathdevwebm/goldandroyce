@@ -1,0 +1,11 @@
+.container {
+  height: 80vh;
+  background: radial-gradient(circle, #fff5d8, #e2d09a);
+}
+.content {
+  height: 100%;
+  background-image: url("../assets/logo_1.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 500px 500px;
+}

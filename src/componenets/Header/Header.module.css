@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle, #fff5d8, #e2d09a);
+}
+.row1 {
+  width: 100%;
+  display: flex;
+  color: #c1c1c1;
+  background-color: #151236;
+  font-weight: 600;  
+}
+.row2{
+  width: 80%;
+}
+.data-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.data-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.data {
+  font-size: 14px;
+}
