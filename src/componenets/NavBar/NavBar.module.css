@@ -1,31 +1,42 @@
 /* Grid.css */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto;
   background: transparent;
+  width: 80%;
+  margin: 10px auto;
 }
 
 .column-1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 20vw;
 }
 
 .column-2 {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
 }
 
 .row {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
+.row1 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .logo {
-  width: 120px;
+  width: 70px;
   height: auto;
   object-fit: cover;
 }
@@ -36,33 +47,58 @@
   justify-content: flex-end;
 }
 
-.horizontal-nav ul {
+.horizontal-nav1 {
+  display: flex;
+  gap: 20px;
+}
+.horizontal-nav1 ul {
   list-style-type: none;
   display: flex;
 }
 
-.horizontal-nav li {
+.horizontal-nav1 li {
   margin-right: 10px;
-  font-weight: 600;
 }
 
-.button{
-  padding: 10px;
-  background-color: #fffbff;
-  color: #000;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.button span{
+.horizontal-nav1 li a {
   font-weight: 400;
-  font-size: 1.3rem;
-  padding-right: 10px;
 }
 
-.empty-row {
-  border-top: 1px solid black;
-  background-color: transparent;
+.dropNav {
+  position: relative;
+}
+
+.subNav {
+  padding: 20px 25px 20px 10px;
+  position: absolute;
+  left: -320%;
+  background-color: #fff;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.colnav {
+  display: flex;
+  flex-direction: column;
+}
+
+.colnav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: circle;
+}
+
+.colnav ul li {
+  min-width: 310px;
+  display: flex;
+}
+
+.colnav ul li a {
+  font-size: 12px;
+  color: #BDA96C;
+}
+
+.colnav ul li a:hover{
+  color: black;
 }
