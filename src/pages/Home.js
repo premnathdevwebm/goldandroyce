@@ -5,7 +5,6 @@ import MainVideo from "componenets/MainVideo/MainVideo";
 import TypeWriterEffect from "react-typewriter-effect";
 import SecondComp from "componenets/secondComp/ConatinComp";
 import ThirdComp from "componenets/ThirdComp/ThirdComp";
-import TeamCarousel from "componenets/TeamComp/TeamComp";
 
 const Home = () => {
   return (
@@ -60,7 +59,6 @@ const Home = () => {
       <MainVideo />
       <SecondComp />
       <ThirdComp />
-      <TeamCarousel />
     </>
   );
 };
