@@ -1,3 +1,4 @@
+import { Canvas } from "@react-three/fiber";
 import { FaArrowUp } from "react-icons/fa";
 import styles from "./Home.module.css";
 import HeadSring from "componenets/HeadSpring/HeadSring";
@@ -5,6 +6,8 @@ import MainVideo from "componenets/MainVideo/MainVideo";
 import TypeWriterEffect from "react-typewriter-effect";
 import SecondComp from "componenets/secondComp/ConatinComp";
 import ThirdComp from "componenets/ThirdComp/ThirdComp";
+import TeamComp from "componenets/TeamComp/TeamComp";
+import Footer from "componenets/Footer/Footer";
 
 const Home = () => {
   return (
@@ -59,6 +62,12 @@ const Home = () => {
       <MainVideo />
       <SecondComp />
       <ThirdComp />
+      <div style={{height: "50vh"}}>
+      <Canvas shadows camera={{ position: [0, 0, 20], fov: 30 }}>
+      <TeamComp />
+      </Canvas>
+      </div>
+      <Footer />
     </>
   );
 };
