@@ -7,7 +7,6 @@ import TypeWriterEffect from "react-typewriter-effect";
 import SecondComp from "componenets/secondComp/ConatinComp";
 import ThirdComp from "componenets/ThirdComp/ThirdComp";
 import TeamComp from "componenets/TeamComp/TeamComp";
-import Footer from "componenets/Footer/Footer";
 
 const Home = () => {
   return (
@@ -67,7 +66,6 @@ const Home = () => {
       <TeamComp />
       </Canvas>
       </div>
-      <Footer />
     </>
   );
 };
